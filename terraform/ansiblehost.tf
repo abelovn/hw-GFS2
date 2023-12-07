@@ -64,7 +64,7 @@ resource "yandex_compute_instance" "ansible" {
   }
 
   provisioner "file" {
-    source      = "./ansible/ansible.cfg"
+    source      = "../ansible/ansible.cfg"
     destination = "/home/cloud-user/ansible.cfg"
 
   }
